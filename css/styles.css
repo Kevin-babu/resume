@@ -1,78 +1,76 @@
 *{
     box-sizing: border-box;
+    margin: 0;
 }
+body{
+    background-color: #2191b9;
+    
+}
+
+.box{
+    width: 80%;
+    margin: 3% auto;
+    border-radius: 20px;
+}
+
 
 .navbar{
-    position: fixed;
-    top: 2% ;
-    right:5%;
-    background-color: rgba(22, 22, 22, 0.199);
-    border-radius: 25px;
-    backdrop-filter: blur(8px);
-    z-index: 2000;
-}
-.nav-link{
-    font-size: large;
-    color: white;
-}
-.nav-link:hover{
-    color: gray;
+    border-top-left-radius : 20px;
+    border-top-right-radius: 20px;
 }
 
-.navbar-toggler{
-    color: white;
+.icon{
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
 }
-.navbar-toggler-icon{
-    color: white;
-}
+
 
 .container-top{
-    height:500px;
+    
     text-align: center;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  /* padding-top: 10%; */
-  animation: gradient 15s ease infinite;
+    background-color: rgb(255, 255, 255);
+    padding: 8% 15% 3%;
+    
 }
-@keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
+
 
 .myphoto{
-    height: 400px;
+    height: 300px;
     width: 300px;
     border-radius: 50%;
+    border: 15px solid rgb(92, 91, 91);
     float: left;
     margin: 4% 8%;
+    
+    
 }
 
 .myname{
     display: inline-block;
     margin: 12% 0 3%;
     font-weight: bold;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 .disc{
-    color:white ;
+    color:rgb(0, 0, 0) ;
+}
+
+.download-btn{
+    border: 1px solid grey;
 }
 
 /* EDUCATION */
 
 .education{
     padding: 5% 10% 2%;
+    background-color: white;
 }
 
 .edu-col{
     text-align: center;
     margin-bottom: 8%;
+    height: 100%;
 }
 
 h2{
@@ -84,16 +82,14 @@ h2{
 
 .skills{
     padding: 5% 8%; 
-    background-color: #1b1b1b;
-    color: antiquewhite;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    height: auto;
 }
 .skill-col{
-    text-align: center;
-    padding: 4%;
+    padding: 2%;
 }
-.main-col{
-    text-align: center;
-}
+
 .skill-img{
     height: 50px;
     width: 50px;
@@ -103,6 +99,7 @@ h2{
 
 .training{
     padding: 8% 8% 5%;
+    background-color: white;
 }
 
 .card{
@@ -115,34 +112,211 @@ h2{
 }
 
 
-/* CONTACT */
-.contact{
+
+
+
+/* card effect */
+
+.container1{
+    width: 100%;
+    position: relative;
+    justify-content: space-between;
+    margin: 0px;
+
+}
+
+ .card1{
+    position: relative;
+    cursor: pointer;
+    margin: 0px auto;
+
+}
+
+ .face{
+    width: 100%;
+    height: 200px;
+    transition: 0.5s;
+
+}
+
+ .face.face1{
+    position: relative;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+ .card1:hover .face.face1{
+    background: #0470a1cc;
+    transform: translateY(0);
+}
+
+ .card1 .face.face1 .content{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+ .card1:hover .face.face1 .content h3{
+    opacity: 1;
+    color: white;
+}
+
+ .card1 .face.face1 .content img{
+    max-width: 100px;
+}
+
+ .card1 .face.face1 .content h3 {
+    margin: 10px 0 0;
+    padding: 0;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 1.5em;
+}
+
+ .card1 .face.face2{
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+    transform: translateY(-100px);
+}
+
+ .card1:hover .face.face2{
+    transform: translateY(0);
+}
+
+ .card1 .face.face2 .content p{
+    margin: 0;
+    padding: 0;
+}
+
+.card-text{
+    color: rgb(0, 0, 0);
+}
+
+/* PROJECTS */
+
+.projects{
+    background-color: white;
+    margin: none;
+    width: 100%;
+    padding: 1%;
+    min-height: 500px;
+}
+
+.procard > .face.face1{
+    background-color: #2191b9;
+    
+}
+.procard > .face.face1 .content h3{
+    color: white;
+}
+
+/* CONTACT */
+footer{
+    text-align: center;
+    height: 400px;
+    width: 100%;
     padding: 5% 8%;
-    color: antiquewhite;
-    background: linear-gradient(-45deg, #ee7752, #ebcad6, #2191b9, #23d5ab);
-}
-.social{
-    padding: 3% 0 15%;
-}
-.fa-mobile{
-    margin: 2%;
-}
-
-.con-img{
-    height: 30px;
-    width: 30px;
-    margin: 0 4%;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 
-@media (max-width: 1020px){
+.credits{
+    text-align: center;
+}
+.credits hr{
+    width: 50%;
+    margin: 60px auto;
+}
+
+.social-menu{
+    display: inline-block;
+    margin: 0 auto 3%;
+}
+
+
+.social-menu ul{
+    position: relative;
+    padding: 0;
+    display: flex;
+}
+
+.social-menu ul li{
+    list-style: none;
+    margin: 0 15px;
+}
+
+.social-menu ul li .fab{
+    font-size: 30px;
+    line-height: 60px;
+    transition: .3s;
+    color: #000;
+}
+
+.social-menu ul li .fab:hover{
+    color: #fff;
+}
+
+.social-menu ul li a{
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0,0,0,.5);
+}
+
+.social-menu ul li a:hover{
+    transform: translate(0, -10%);
+}
+
+.social-menu ul li:nth-child(1) a:hover{
+    background-color: rgba(0, 0, 0, 0.829);
+}
+.social-menu ul li:nth-child(2) a:hover{
+    background-color: #E4405F;
+}
+.social-menu ul li:nth-child(3) a:hover{
+    background-color: #0077b5;
+}
+.social-menu ul li:nth-child(4) a:hover{
+    background-color: rgb(165, 29, 29);
+    
+}
+
+@media (max-width: 1440px){
+    .box{
+        width: 100%;
+        margin: 0;
+    }
     .myphoto{
-        height: 280px;
-        width: 200px;
+        height: 300px;
+        width: 300px;
         margin-top: 15%;
     }
     .myname{
         margin-top: 21%;
+    }
+    .footer, .navbar{
+        border-radius: 0;
+    } 
+}
+@media (max-width:744px){
+    .projects{
+        padding: 3%;
     }
 }
