@@ -208,7 +208,7 @@ h2{
     background-color: white;
     margin: none;
     width: 100%;
-    padding: 1%;
+    padding: 3%;
     min-height: 500px;
 }
 
@@ -314,6 +314,11 @@ footer{
     .footer, .navbar{
         border-radius: 0;
     } 
+}
+@media (max-width:1020px){
+    .projects{
+        padding: 1%;
+    }
 }
 @media (max-width:744px){
     .projects{
