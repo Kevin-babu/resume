@@ -327,4 +327,7 @@ footer{
     .myphoto{
         margin: 15% 0;
     }
+    .skills{
+        text-align: center;
+    }
 }
